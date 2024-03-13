@@ -1,0 +1,301 @@
+.text {
+    color: #fcd487;
+    font-family: "Cinzel", serif;font-optical-sizing: auto;
+    text-align: center;
+    position: relative;
+    top: -145%;
+
+    font-size: 40px;
+    font-weight: 100;
+    line-height: .5em;
+    z-index: 1;
+}
+
+.big {
+    font-size: 55px;
+}
+
+.top {
+    margin-top: 7%;
+}
+
+
+.body {
+    background-color: black;
+}
+
+.container {
+    background-color: #2b6568;
+    width: 600px;
+    height: 600px;
+
+    position: fixed;
+    z-index: -5;
+    top: 10%;
+    left: 30%;
+    /*overflow: hidden;*/
+}
+
+.leftWing {
+    transform: rotate(15deg);max-width: 10px; font-size: 1.5em;
+    margin: -10px;
+    
+}
+
+.rightWing {
+    transform: rotate(-20deg);max-width: 10px; font-size: 1.5em;
+    margin: -10px;
+    
+}
+
+
+
+.one {
+    position: relative;
+    color: #fcd487;
+    z-index: 1;
+    left: 26%;
+    top: -197%;
+    transform: rotate(80deg);
+}
+
+.two {
+    position: relative;
+    color: #fcd487;
+    z-index: 1;
+    left: 38%;
+    top: -202%;
+    transform: rotate(65deg);
+}
+
+.three {
+    position: relative;
+    color: black;
+    z-index: 1;
+    top: -199%;
+    left: 18%;
+    transform: rotate(80deg);
+}
+
+.moon {
+    background-size: 100%;
+    position: relative;
+    z-index: -1;
+    top: -145%;
+    left: 35%;
+}
+
+.slice {
+    background-size: 100%;
+    border-color:orange;
+    position: relative;
+    z-index: -1;
+    top: -175%;
+    left: 40%;
+}
+
+.whiteMoon {
+    background-color: white;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    
+    position: relative;
+    z-index: -1;
+    top: 47%;
+    left: 100%;
+}
+
+
+
+.bottom {
+    position: relative;
+    top: -203%;
+    font-size: 25px;
+    margin: 0;
+}
+
+.tpRght {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+
+    top: 2%;
+    left: 2%;
+}
+
+.lineTop {
+    background-color: #fcd487;
+    width: 56%;
+    height: .2%;
+
+    position: relative;
+    z-index: 1;
+
+    top: -14%;
+    left: 23%;
+}
+
+.tpLft {
+    transform: rotate(90deg);
+    position: relative;
+    z-index: 1;
+
+    top: 26.5%;
+    right: -40%;
+}
+
+.lineLeft {
+    background-color: #fcd487;
+    height: 56%;
+    width: 0.2%;
+
+    position: relative;
+    z-index: 1;
+
+    top: -13%;
+    left: 3%;
+}
+
+.lineRight {
+    background-color: #fcd487;
+    height: 55%;
+    width: .2%;
+
+    position: relative;
+    z-index: 1;
+
+    top: -67%;
+    left: 97%;
+}
+
+.btmRght {
+    transform: rotate(180deg);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+
+    top: -219%;
+    left: -1%;}
+
+.lineBtm {
+    background-color: #fcd487;
+    width: 56%;
+    height: 0.2%;
+
+    position: relative;
+    z-index: 1;
+
+    top: -218%;
+    left: 23%;  
+}
+
+.btmLft {transform: rotate(-90deg);
+    position: relative;
+    z-index: 1;
+
+    top: -278%;
+    left: -38%;
+}
+
+.waves {
+    position: relative;
+
+    top: -197%;
+    left: -17%;
+}
+
+.waveOne {
+    position: relative;
+    z-index: -3;
+
+    top: -230%;
+    left: 43.5%;
+
+    animation-name: wavey;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.waveTwo {
+    position: relative;
+    z-index: -3;
+
+    top: 65%;
+    left: 39.5%;
+
+    animation-name: wavey;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.waveThree {
+    position: relative;
+    z-index: -3;
+
+    top: 68%;
+    left: 45.5%;
+
+    animation-name: wavey;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+}
+
+.waveFour {
+    position: relative;
+    z-index: -3;
+
+    top: 70%;
+    left: 42.5%;
+
+    animation-name: wavey;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.6s;
+}
+
+.bird {
+
+}
+
+@keyframes wavey {
+    0% {transform: translate(0px, 0px);}
+    25% {transform: translate(35px, 0px);}
+    50% {transform: translate(-20px, 0px);}
+    75% {transform: translate(-10px, 0px);}
+    75% {transform: translate(5px, 0px);}
+}
+
+@keyframes spooky {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+@keyframes moonWhite {
+    0% {}
+    100% {}
+}
+
+
+.moon:hover {
+    animation-name: spooky;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.moon:hover .one {
+    animation-name: smoothe;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes smoothe {
+    0% {opacity: 100%;}
+    100% {color: black;}
+}
